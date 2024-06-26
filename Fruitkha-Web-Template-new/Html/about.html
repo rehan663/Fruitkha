@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="/Css/cart.css">
+    <link rel="stylesheet" href="/Css/Home.css">
+    <link rel="icon" type="image/x-icon" href="/Images/2.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- <=============== Main Start ===============> -->
+
+    <div id="main">
+
+        <!-- <=============== Page-1 Start ===============> -->
+
+        <div id="page-1" class="w-[100%] min-h-[90vh] relative">
+
+
+            <!-- <=============== Navbar Start ===============> -->
+
+            <nav
+            class="fixed z-50 bg-transparent w-[100%] h-[15vh] bg-amber-500 flex justify-between text-center items-center px-[5vw] sm:px-[10vw]">
+            <img class=" object-cover w-[170px] cursor-pointer" src="/Images/logo.png" alt="" href="#">
+
+            <ul id="nav-menu"
+                class=" lg:flex lg:flex-row lg:static lg:gap-7  text-white flex-col bg-black lg:bg-transparent w-[83%] sm:w-[80%] lg:ml-[10vw] xl:ml-[15vw] 2xl:ml-[18vw] absolute left-[-100%] top-[100%]">
+
+                <li
+                    class=" font-bold hover:text-[#f28123] transition ease-in-out delay-75 border-b py-2 text-left pl-5 lg:text-center lg:py-0 lg:pl-0 lg:border-0">
+                    <a href="/Html/home.html">Home</a>
+                </li>
+
+                <li
+                    class="hover:text-[#f28123] text-[#f28123] transition ease-in-out delay-75 font-bold border-b py-2 text-left pl-5 lg:text-center lg:py-0 lg:pl-0 lg:border-0">
+                    <a href="/Html/about.html">About</a>
+                </li>
+
+                <li
+                    class="selector hover:text-[#f28123] transition ease-in-out delay-75 font-bold border-b py-2 text-left pl-5 lg:text-center lg:py-0 lg:pl-0 lg:border-0">
+                    <a id="selector" class="cursor-pointer">Pages <i class="ri-arrow-down-s-fill lg:hidden"></i></a>
+
+                </li>
+
+                <!-- <=== Pages Dropdown ===> -->
+                <ul id="dropdowns"
+                    class="dropdowns opacity-0 invisible absolute lg:text-black lg:pb-5 lg:top-[70px] lg:left-[48%] transition-all delay-75 lg:w-[220px] lg:shadow-xl lg:bg-white text-left lg:rounded font-[600] lg:z-50 w-[100%] bg-black lg:pl-5"
+                    id="dropdowns">
+
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b  py-2 text-left pl-5   lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/404error.html">404 pages</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b  py-2 text-left pl-5 lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/about.html">About</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b  py-2 text-left pl-5 lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/cart.html">Cart</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b  py-2 text-left pl-5 lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/checkOut.html">Chechk Out</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b  py-2 text-left pl-5 lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/contact.html">Contact</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b  py-2 text-left pl-5 lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/news.html">News</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm py-2 text-left pl-5 lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/shop.html">Shop</a>
+                    </li>
+
+                </ul>
+
+                <li
+                    class="hover:text-[#f28123] transition ease-in-out delay-75 font-bold border-b py-2 text-left pl-5 lg:text-center cursor-pointer lg:py-0 lg:pl-0 lg:border-0">
+                    <a id="news" href="/Html/news.html">News <i class="ri-arrow-down-s-fill lg:hidden"></i></a>
+
+                </li>
+
+                <!-- <=== News Dropdown ===> -->
+                <ul id="news-dd"
+                    class="dropdowns opacity-0 invisible absolute lg:text-black lg:top-[70px] lg:pb-5 lg:left-[53%] transition-all delay-75 lg:w-[220px] lg:shadow-xl lg:bg-white text-left lg:rounded font-[600] lg:z-50 w-[100%] bg-black lg:pl-5"
+                    id="dropdowns">
+
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b  py-2 text-left pl-5   lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/news.html">News</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm py-2 text-left pl-5 lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/singleArticle.html">Single News</a>
+                    </li>
+
+                </ul>
+                <li
+                    class="hover:text-[#f28123] transition ease-in-out delay-75 font-bold border-b py-2 text-left pl-5 lg:text-center lg:py-0 lg:pl-0 lg:border-0">
+                    <a href="/Html/contact.html">Contact</a>
+                </li>
+
+                <li
+                    class="hover:text-[#f28123] transition ease-in-out delay-75 font-bold cursor-pointer py-2 text-left pl-5 lg:text-center lg:py-0 lg:pl-0 lg:border-0">
+                    <a id="shop" href="/Html/shop.html">Shop <i class="ri-arrow-down-s-fill lg:hidden"></i></a>
+
+                </li>
+                <!-- <=== Shop class="pl-10 lg:pl-0" Dropdown ===> -->
+                <ul id="shop-dd"
+                    class="dropdowns opacity-0 invisible absolute lg:text-black lg:top-[70px] lg:pb-5 lg:left-[64%] transition-all delay-75 lg:w-[220px] lg:shadow-xl lg:bg-white text-left lg:rounded font-[600] lg:z-50 w-[100%] bg-black lg:pl-5"
+                    id="dropdowns">
+
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b border-t  py-2 text-left pl-5   lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/shop.html">Shop</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b  py-2 text-left pl-5 lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/checkOut.html">Check Out</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm border-b  py-2 text-left pl-5   lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/singleArticle.html">Single
+                            Product</a>
+                    </li>
+                    <li
+                        class="hover:text-[#f28123] lg:pt-6 text-sm py-2 text-left pl-5 lg:py-0 lg:pl-0 lg:border-0">
+                        <a class="pl-10 lg:pl-0" href="/Html/singleNews.html">Cart</a>
+                    </li>
+
+                </ul>
+            </ul>
+
+
+            <div id="right-menu" class="flex gap-5 items-center text-white font-bold">
+                <i
+                    class="ri-shopping-cart-2-fill hidden lg:block hover:text-[#f28123] transition ease-in-out delay-100 hover:cursor-pointer"></i>
+                <i class="fa fa-search hidden sm:block text-white hover:text-[#f28123] transition ease-in-out delay-100 hover:cursor-pointer"
+                    aria-hidden="true"></i>
+                <i
+                    class="ri-menu-line  lg:hidden font-bold p-1 pl-2 pr-2 mx-auto bg-[#f28123] text-xl  hover:cursor-pointer"></i>
+                <span id="close"
+                    class="hidden font-bold p-1 pl-2.5 pr-2.5  bg-[#f28123] text-xl hover:cursor-pointer absolute sm:right-[10%]">X</span>
+            </div>
+        </nav>
+
+            <!-- <=============== Navbar End ===============> -->
+
+
+            <!-- <===== Slider Start =====> -->
+            <div id="slider" class="relative w-[100%]">
+                <div id="slider-img" class="absolute w-[100%] h-[80vh] xl:h-[67vh]  10">
+                    <img class="object-cover object-center filter w-[100%] h-[100%]" src="/Images/about-1.jpg" alt="">
+                </div>
+                <div class="backdiv absolute w-[100%] h-[80vh] xl:h-[67vh]   bg-black opacity-70 z-20"></div>
+                <div id="slideText"
+                    class="absolute w-[100%] top-[38vh] lg:top-[37vh] xl:top-[30vh] text-center text-white z-30">
+                    <p class="text-[#f28123] uppercase text-[15px] font-[700] tracking-[7px]">
+                        WE SALE FRESH FRUITS
+                    </p>
+                    <h1 class="text-[30px] font-bold md:text-[50px] lg:text-[50px] pt-[13px]">About us</h1>
+                </div>
+            </div>
+            <!-- <===== Slider End =====> -->
+
+        </div>
+
+        <!-- <=============== Page-1 End ===============> -->
+
+
+
+        <!-- <=============== Page-2 Start ===============> -->
+
+        <div class="page-2 w-[100%] relative">
+
+            <!-- <==== Why-Fruitkha Start ====> -->
+
+            <div class="why-fruitkha w-[100%] mt-12 flex items-center justify-between">
+
+                <!-- <== Why-Fruitkha-Left-section ==> -->
+                <div
+                    class="why-fruitkha-left w-[100%] lg:w-[600px] xl:w-[700px] px-4 lg:ml-[1vw] xl:ml-[8vw] flex flex-col lg:flex-row lg:flex-wrap sm:items-center justify-start">
+
+                    <div
+                        class="fruitkha-left-product mt-8 flex flex-col md:flex-row flex-wrap items-start md:justify-center  gap-5 md:gap-10">
+
+                        <h1
+                            class="text-3xl font-bold tracking-wide sm:text-4xl mb-4 lg:mb-0 w-[100%] md:text-center lg:text-start lg:ml-[2vw] xl:ml-[3vw]">
+                            Why <span class="text-[#f28123]">Fruitkha</span></h1>
+
+                        <!-- <= Product-1 => -->
+                        <div class="fruitkha-text-box flex sm:w-[530px] md:w-[320px] lg:w-[250px] xl:w-[300px]">
+                            <i
+                                class="fa-solid fa-truck-fast  text-[#f28123] text-2xl border-2 border-[#f28123] border-dotted rounded-full p-4 h-16"></i>
+                            <div class="ftbt pl-3">
+                                <h4 class="text-xl font-bold text-black">Home Delivery</h4>
+                                <p class="text-[#5a686e] text-sm leading-6 mt-1 font-sans">sit voluptatem accusantium
+                                    dolore mque laudantium, totam rem aperiam, eaque ipsa quae
+                                    ab
+                                    illo.</p>
+                            </div>
+                        </div>
+
+                        <!-- <= Product-2 => -->
+                        <div class="fruitkha-text-box flex sm:w-[530px] md:w-[320px] lg:w-[250px] xl:w-[300px]">
+                            <i
+                                class="ri-money-dollar-box-line text-[#f28123] text-2xl border-2 border-[#f28123] border-dotted rounded-full h-16 p-4 px-[18px]"></i>
+                            <div class="ftbt pl-3">
+                                <h4 class="text-xl font-bold text-black">Best Price</h4>
+                                <p class="text-[#5a686e] text-sm leading-6 mt-1 font-sans">sit voluptatem accusantium
+                                    dolore mque laudantium, totam rem aperiam, eaque ipsa quae
+                                    ab
+                                    illo.</p>
+                            </div>
+                        </div>
+
+                        <!-- <= Product-3 => -->
+                        <div class="fruitkha-text-box flex sm:w-[530px] md:w-[320px] lg:w-[250px] xl:w-[300px]">
+                            <i
+                                class="ri-archive-fill  text-[#f28123] text-2xl border-2 border-[#f28123] border-dotted rounded-full h-16 p-4 px-[18px]"></i>
+                            <div class="ftbt pl-3">
+                                <h4 class="text-xl font-bold text-black">Custom Box</h4>
+                                <p class="text-[#5a686e] text-sm leading-6 mt-1 font-sans">sit voluptatem accusantium
+                                    dolore mque laudantium, totam rem aperiam, eaque ipsa quae
+                                    ab
+                                    illo.</p>
+                            </div>
+                        </div>
+
+                        <!-- <= Product-4 => -->
+                        <div class="fruitkha-text-box flex sm:w-[530px] md:w-[320px] lg:w-[250px] xl:w-[300px]">
+                            <i
+                                class="fa-solid fa-arrows-rotate  text-[#f28123] text-2xl border-2 border-[#f28123] border-dotted rounded-full h-16 p-4 px-[18px]"></i>
+                            <div class="ftbt pl-3">
+                                <h4 class="text-xl font-bold text-black">Quick Refund</h4>
+                                <p class="text-[#5a686e] text-sm leading-6 mt-1 font-sans">sit voluptatem accusantium
+                                    dolore mque laudantium, totam rem aperiam, eaque ipsa quae
+                                    ab
+                                    illo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fruitkha img block -->
+                <div id="fruitkha-img"
+                    class="w-[45%] xl:w-[40%] h-[450px] xl:h-[400px] px-0 mx-0 overflow-hidden rounded-lg hidden lg:block mt-10">
+                    <img class="w-[100%] h-[100%] object-cover object-center hover:scale-105 transition-all rounded-lg"
+                        src="/Images/feature-bg.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- <=== Discount ===> -->
+            <div
+                class="Discount w-[100%] mt-36 h-auto py-28 sm:px-[15%] lg:pl-[5%] xl:pl-[10%] bg-[url('/Images/1.jpg')] pl-5 flex flex-col justify-center overflow-hidden">
+                <h1 class="text-4xl font-bold md:text-5xl">December sale is on! <br>
+                    with big <span class="text-[#f28123]">Discount...</span></h1>
+                <p class="text-3xl font-sans mt-7">Sale! <span class="text-6xl font-bold text-[#f28123]">50%</span>
+                    off
+                </p>
+                <a href="/Html/cart.html"
+                    class="text-white 0transition ease-in-out delay-10 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer bg-[#f28123] py-3 px-5 rounded-full inline-block mt-7 w-[120px]">Shop
+                    Now</a>
+            </div>
+
+        </div>
+
+        <!-- <=============== Page-2 End ===============> -->
+
+
+
+        <!-- <=============== Page-3 Start ===============> -->
+
+        <div id="page-4" class=" w-[100%] relative">
+
+            <!-- <=== Our-Team ===> -->
+            <div id="our-news" class="mt-32 mb-20 w-[100%] px-5 sm:w-[350px] mx-auto md:w-[650px] text-center">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-[700]"><span class="text-[#f28123] mr-2">Our </span>
+                    Team</h1>
+                <div class="line w-12 h-[2.5px] bg-[#f28123] mt-3 mb-5 mx-auto rounded-full"></div>
+                <p class="text-[#787878] sm:leading-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquid, fuga quas itaque eveniet beatae
+                    optio.</p>
+            </div>
+
+            <!-- <=== Our-Team-Card ===> -->
+            <div class="our-team-cards w-[100%] flex flex-wrap items-center justify-center px-4 gap-7">
+
+                <!-- <=== Card-1 ===> -->
+                <div
+                    class="team-img w-[100%] md:w-[330px] lg:w-[290px] xl:w-[350px] 2xl:w-[400px]  h-[95vh] md:h-[480px] 2xl:h-[550px] relative sm:w-[500px] rounded-md overflow-hidden text-center hover:shadow-lg">
+                    <img class="w-[100%] h-[85%] object-cover object-center rounded-md hover:rounded-t-md hover:rounded-b-none"
+                        src="/Images/team-1.jpg" alt="">
+                    <div class="team-icon absolute bottom-[17%] text-center w-[100%]">
+                        <i
+                            class="ri-facebook-fill p-2 mx-1 text-white rounded-full bg-[#f28123] transition ease-in-out duration-150 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer"></i>
+                        <i
+                            class="fa-brands fa-twitter p-2 mx-1 text-white rounded-full bg-[#f28123] transition ease-in-out duration-150 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer"></i>
+                        <i
+                            class="fa-brands fa-instagram p-2 mx-1 text-white rounded-full bg-[#f28123] transition ease-in-out duration-150 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer"></i>
+                    </div>
+                    <h3 class="text-xl font-bold my-2">Jimmy Doe</h3>
+                    <p class="font-bold text-[#787878] text-sm">Farmer</p>
+                </div>
+
+                <!-- <=== Card-2 ===> -->
+                <div
+                    class="team-img w-[100%] md:w-[330px] lg:w-[290px] xl:w-[350px] 2xl:w-[400px]  h-[95vh] md:h-[480px] 2xl:h-[550px] relative sm:w-[500px] rounded-md overflow-hidden text-center hover:shadow-lg">
+                    <img class="w-[100%] h-[85%] object-cover object-center rounded-md hover:rounded-t-md hover:rounded-b-none"
+                        src="/Images/team-2.jpg" alt="">
+                    <div class="team-icon absolute bottom-[17%] text-center w-[100%]">
+                        <i
+                            class="ri-facebook-fill p-2 mx-1 text-white rounded-full bg-[#f28123] transition ease-in-out duration-150 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer"></i>
+                        <i
+                            class="fa-brands fa-twitter p-2 mx-1 text-white rounded-full bg-[#f28123] transition ease-in-out duration-150 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer"></i>
+                        <i
+                            class="fa-brands fa-instagram p-2 mx-1 text-white rounded-full bg-[#f28123] transition ease-in-out duration-150 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer"></i>
+                    </div>
+                    <h3 class="text-xl font-bold my-2">Marry Doe</h3>
+                    <p class="font-bold text-[#787878] text-sm">Farmer</p>
+                </div>
+
+                <!-- <=== Card-3 ===> -->
+                <div
+                    class="team-img w-[100%] md:w-[330px] lg:w-[290px] xl:w-[350px] 2xl:w-[400px]  h-[95vh] md:h-[480px] 2xl:h-[550px] relative sm:w-[500px] rounded-md overflow-hidden text-center hover:shadow-lg">
+                    <img class="w-[100%] h-[85%] object-cover object-center rounded-md hover:rounded-t-md hover:rounded-b-none"
+                        src="/Images/team-3.jpg" alt="">
+                    <div class="team-icon absolute bottom-[17%] text-center w-[100%]">
+                        <i
+                            class="ri-facebook-fill p-2 mx-1 text-white rounded-full bg-[#f28123] transition ease-in-out duration-150 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer"></i>
+                        <i
+                            class="fa-brands fa-twitter p-2 mx-1 text-white rounded-full bg-[#f28123] transition ease-in-out duration-150 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer"></i>
+                        <i
+                            class="fa-brands fa-instagram p-2 mx-1 text-white rounded-full bg-[#f28123] transition ease-in-out duration-150 hover:bg-[#051922] hover:text-[#f28123] hover:cursor-pointer"></i>
+                    </div>
+                    <h3 class="text-xl font-bold my-2">Simaon Joe</h3>
+                    <p class="font-bold text-[#787878] text-sm">Farmer</p>
+                </div>
+            </div>
+
+            <!-- <=== Employee ===> -->
+            <div class="employee w-[100%] overflow-hidden">
+
+                <!-- <= Employee-1 => -->
+                <div class="info text-center w-[100%] flex flex-col items-center justify-center">
+
+                    <!-- <= Employee-1 Content=> -->
+                    <div class="employee-content w-[100%] text-center flex flex-col items-center justify-center">
+
+                        <!-- <= Employee-1 Img=> -->
+                        <div class="employee-img w-[100px] rounded-full text-center">
+                            <img class="w-[100%] object-cover rounded-full object-center" src="/Images/avatar1.png"
+                                alt="">
+                        </div>
+
+                        <h3 class="mt-5 text-xl font-bold leading-7">Saira Hakim</h3>
+                        <h3 class="text-sm mt-4 font-semibold text-[#828c90]">Local shop owner</h3>
+                        <p
+                            class="px-3 text-sm md:text-[17px] xl:text-[20px] mt-7 text-[#9b9b9b] w-[300px] xl:w-[750px] md:w-[650px] leading-6 md:leading-8 font-sans">
+                            " Sed ut perspiciatis unde omnis iste natus error
+                            veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut
+                            perspiciatis unde omnis iste natus error sit voluptatem accusantium "</p>
+                        <i class="fa-solid fa-quote-right text-[#b4babc] mt-7 text-3xl"></i>
+                    </div>
+                </div>
+
+                <!-- <= Employee-2 => -->
+                <div class="info text-center w-[100%] flex flex-col items-center justify-center">
+
+                    <!-- <= Employee-2 Content=> -->
+                    <div class="employee-content w-[100%] text-center flex flex-col items-center justify-center">
+
+                        <!-- <= Employee-2 Img=> -->
+                        <div class="employee-img w-[100px] rounded-full text-center">
+                            <img class="w-[100%] object-cover rounded-full object-center" src="/Images/avatar2.png"
+                                alt="">
+                        </div>
+
+                        <h3 class="mt-5 text-xl font-bold leading-7">David Niph</h3>
+                        <h3 class="text-sm mt-4 font-semibold text-[#828c90]">Local shop owner</h3>
+                        <p
+                            class="text-sm md:text-[17px] xl:text-[20px] mt-7 text-[#9b9b9b] w-[300px] xl:w-[750px] md:w-[650px] leading-6 md:leading-8 font-sans">
+                            " Sed ut perspiciatis unde omnis iste natus error
+                            veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut
+                            perspiciatis unde omnis iste natus error sit voluptatem accusantium "</p>
+                        <i class="fa-solid fa-quote-right text-[#b4babc] mt-7 text-3xl"></i>
+                    </div>
+                </div>
+
+                <!-- <= Employee-3 => -->
+                <div class="info text-center w-[100%] flex flex-col items-center justify-center">
+
+                    <!-- <= Employee-3 Content=> -->
+                    <div class="employee-content w-[100%] text-center flex flex-col items-center justify-center">
+
+                        <!-- <= Employee-3 Img=> -->
+                        <div class="employee-img w-[100px] rounded-full text-center">
+                            <img class="w-[100%] object-cover rounded-full object-center" src="/Images/avatar3.png"
+                                alt="">
+                        </div>
+
+                        <h3 class="mt-5 text-xl font-bold leading-7">Jacob Sikim</h3>
+                        <h3 class="text-sm mt-4 font-semibold text-[#828c90]">Local shop owner</h3>
+                        <p
+                            class="text-sm md:text-[17px] xl:text-[20px] mt-7 text-[#9b9b9b] w-[300px] xl:w-[750px] md:w-[650px] leading-6 md:leading-8 font-sans">
+                            " Sed ut perspiciatis unde omnis iste natus error
+                            veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut
+                            perspiciatis unde omnis iste natus error sit voluptatem accusantium "</p>
+                        <i class="fa-solid fa-quote-right text-[#b4babc] mt-7 text-3xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <=============== Page-3 End===============> -->
+
+
+
+        <!-- <=============== Page-Last Start ===============> -->
+
+        <div class="page-3 relative w-[100%] min-h-[100vh] mt-36">
+
+            <!-- <=============== LogoSection Start ===============> -->
+            <div class="logoSection w-[100%]  bg-[#f5f5f5]">
+                <div class="logo w-[100%] flex flex-wrap items-center justify-center  gap-[70px] py-[50px]">
+                    <img src="/Images/2.png" alt="" class="w-[200px]">
+                    <img src="/Images/3.png" alt="" class="w-[200px] hidden sm:block">
+                    <img src="/Images/4.png" alt="" class="w-[200px] hidden md:block">
+                    <img src="/Images/5.png" alt="" class="w-[200px] hidden lg:block">
+                </div>
+            </div>
+            <!-- <=============== LogoSection End ===============> -->
+
+
+            <!-- <=============== Footer Start ===============> -->
+            <div
+            class="footer w-[100%] bg-[#051922] px-4 sm:px-20 lg:px-4 pt-[10vh] flex flex-wrap items-center justify-center gap-10">
+            <div class="firstCol text-white w-[100%] md:w-[280px] lg:w-[200px] lg:mt-7 xl:mt-[-20px] xl:w-[250px]">
+                <h3 class="font-medium text-xl">About Us</h3>
+                <div class="w-[25px] h-[3px] rounded-full bg-[#f28123] my-5"></div>
+                <p class="text-[#869094] font-medium">Ut enim ad minim veniam perspiciatis unde omnis iste natus
+                    error sit voluptatem accusantium leading-6doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div
+                class="secondCol text-white w-[100%] md:w-[280px] lg:w-[200px] xl:w-[250px] mt-10 md:mt-[-18px] lg:mt-[-45px] leading-10">
+                <h3 class="font-medium text-xl">Get in Touch</h3>
+                <div class="w-[25px] h-[3px] rounded-full bg-[#f28123] my-5"></div>
+                <p class="text-[#869094] font-medium text-sm">34/8, East Hukupara, Gifirtok, Sadan.</p>
+                <p class="text-[#869094] font-medium">support@domain.com</p>
+                <p class="text-[#869094] font-medium">+00 111 222 3333</p>
+            </div>
+            <div
+                class="thirdCol text-white w-[100%] md:w-[280px] lg:w-[200px] xl:w-[250px] mt-10 md:mt-0 lg:mt-8 leading-10">
+                <h3 class="font-medium text-xl">Pages</h3>
+                <div class="w-[25px] h-[3px] rounded-full bg-[#f28123] my-5"></div>
+                <ul class="text-[#869094] font-medium">
+                    <li><span><i class="ri-arrow-right-s-line text-[#f28123] font-bold mr-2"></i></span><a
+                            href="/Html/index.html"
+                            class="hover:text-[#f28123] transition ease-in-out delay-75">Home</a> </li>
+                    <li><span><i class="ri-arrow-right-s-line text-[#f28123] font-bold mr-2"></i></span><a
+                            href="/Html/about.html"
+                            class="hover:text-[#f28123] transition ease-in-out delay-75">About</a> </li>
+                    <li><span><i class="ri-arrow-right-s-line text-[#f28123] font-bold mr-2"></i></span><a
+                            href="/Html/shop.html"
+                            class="hover:text-[#f28123] transition ease-in-out delay-75">Shop</a> </li>
+                    <li><span><i class="ri-arrow-right-s-line text-[#f28123] font-bold mr-2"></i></span><a
+                            href="/Html/news.html"
+                            class="hover:text-[#f28123] transition ease-in-out delay-75">News</a> </li>
+                    <li><span><i class="ri-arrow-right-s-line text-[#f28123] font-bold mr-2"></i></span><a
+                            href="/Html/contact.html"
+                            class="hover:text-[#f28123] transition ease-in-out delay-75">Contact</a></li>
+                </ul>
+            </div>
+            <div
+                class="fourthCol text-white w-[100%] md:w-[280px] lg:w-[200px] xl:w-[250px] mt-10 md:mt-[-50px] lg:mt-0  xl:mt-[-25px] leading-8">
+                <h3 class="font-medium text-xl">Get in Touch</h3>
+                <div class="w-[25px] h-[3px] rounded-full bg-[#f28123] my-5"></div>
+                <p class="text-[#869094] font-medium">Subscribe to our mailing list to get the latest updates.
+                </p>
+                <input class="bg-[#012738] w-[75%] h-[50px] rounded-l-lg pl-2 mt-5" type="email" name="" id=""
+                    placeholder="Email">
+                <span
+                    class="p-[14px] bg-[#012738] rounded-r-lg text-[#f28123] hover:text-black hover:bg-[#f28123] transition ease-in-out delay-75"><i
+                        class="ri-send-plane-fill"></i></span>
+            </div>
+            <div class="fifthCol text-white w-[100%] px-[0px] border-t border-[#869094] mt-32  pt-5  leading-8">
+                <h3 class="font-medium text-base text-center text-[#869094]">Copyrights © 2045 - <span
+                        class="text-[#f28123]">Imransdesign</span>, All Rights Reserved.</h3>
+                <div class="icons text-[#869094] text-center my-5">
+                    <i class="ri-facebook-fill text-xl"></i>
+                    <i class="ri-twitter-fill pl-3 text-xl"></i>
+                    <i class="ri-instagram-line pl-3 text-xl"></i>
+                    <i class="ri-linkedin-box-fill pl-3 text-xl"></i>
+                    <i class="fa-regular fa-basketball pl-3 text-xl"></i>
+                </div>
+            </div>
+        </div>
+            <!-- <=============== Footer End ===============> -->
+
+
+        </div>
+        <!-- <=============== Page-Last End===============> -->
+    </div>
+
+    <!-- <=============== Main End ===============> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/JS/cart.js"></script>
+    <script src="/JS/checkOut.js"></script>
+    <script src="/JS/script.js"></script>
+    <!-- <script src="/JS/about.js"></script> -->
+</body>
+
+</html>
